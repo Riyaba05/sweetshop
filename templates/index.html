@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Sweet Shop</h1>
+    <form method="post">
+      <input name="name" placeholder="Name">
+      <input name="category" placeholder="Category">
+      <input name="price" type="number" placeholder="Price">
+      <input name="quantity" type="number" placeholder="Quantity">
+      <button type="submit">Add Sweet</button>
+    </form>
+    <ul>
+      {% for sweet in sweets %}
+        <li>{{ sweet.name }} ({{ sweet.quantity }} pcs)</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
