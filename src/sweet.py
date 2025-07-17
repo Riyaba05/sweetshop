@@ -1,6 +1,6 @@
 class Sweet:
-    def __init__(self, sweet_id, name, category, price, quantity):
-        self.id = sweet_id
+    def __init__(self, id, name, category, price, quantity):
+        self.id = id
         self.name = name
         self.category = category
         self.price = price
